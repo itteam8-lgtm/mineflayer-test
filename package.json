@@ -1,0 +1,24 @@
+{
+  "name": "minecraft-companion-milestone-1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Milestone 1: owner-authorized LAN Mineflayer companion, with safe basic navigation",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "npm run build && node dist/index.js",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test tests/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=22 <27"
+  },
+  "dependencies": {
+    "dotenv": "16.6.1",
+    "mineflayer": "github:PrismarineJS/mineflayer#5a252e6d258882b042e60e21c37d552cdf3b3380",
+    "mineflayer-pathfinder": "2.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.0",
+    "typescript": "5.9.3"
+  }
+}
